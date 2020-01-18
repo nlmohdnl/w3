@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<title>homework week3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+      /* header */
+    .header1
+    {
+margin: 0;
+padding: 0;
+background-color: white;
+    }
+.headr1 img { margin-top: 0; }
+
+/* nav bar */
+
+.mar{ margin-left: 10rem; 
+  margin-right:30rem;}
+
+  /* showcase.......... */
+  .sho{ background-color: black;}
+  .jumbotron div{ 
+   
+
+    background-color:white;
+  width:40%;}
+.jumbotron div h2 { color:black;
+font-size: 1.2rem;
+padding: 1rem;}
+.jumbotron div ul { 
+font-size: 0.8rem;
+font-weight: bold;
+padding-left: 1.5rem;
+line-height: 2rem;
+list-style-type: square;
+
+}
+input {display: inline;
+float: right;
+margin: 2rem;}
+.copyright { 
+font-size: 0.8rem;
+font-weight: bold;}
+.backgroundimg {background-image: url(hardlopers-in-actie-in-haarlem.jpg);
+background-size: cover;
+background-repeat:no-repeat ;}
+
+h3,h5 {color:#01689b;
+}
+h5 {color:
+font-weight:bold;}
+h3 :hover{text-decoration: underline !important;}
+
+.publDate{ font-weight: bold;}
+.prp {color:#a90061; ;}
+
+.border{border: 5px solid lightskyblue !important;
+margin: 2rem;
+text-align: center;}
+.blue { background-color:#01689b;
+color: white;
+margin: 0rem;
+width:100% !important;
+display: block;
+
+padding: 5rem 10rem;}
+
+li {list-style-type: none;}
+.footer{display: flex; align-items: center;
+justify-content: space-around;}
+.footer button {margin: 2rem;}
+.s {width: 20rem !important;}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron text-center header1">
+        <img src="logo-ro.png" alt="Rijksoverheid">
+      </div>
+
+      
+   
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active mar">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Actueel</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Onderwerpen</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ministeries</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Regering</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Documenten</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Do mee</a>
+          </li>
+        </ul>
+      </nav>
+
+      <input type="text" id="search-keyword" class="searchInput" name="trefwoord" title="Type hier uw zoektermen" placeholder="Zoeken">
+      <div class="jumbotron p-3 p-md-5 text-white rounded backgroundimg ">
+        
+        <div class="s">
+          
+            <h2>Veel bekeken</h2>
+            <ul>
+                    
+
+              <li><a href="https://www.rijksoverheid.nl/onderwerpen/veranderingen">
+  Veranderingen in 2020</a></li>
+
+<li><a href="https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/plannen-kabinet-voor-meer-balans-tussen-vast-werk-en-flexwerk" class=" ">
+  Arbeidscontracten en ontslag: wat verandert er door de WAB?</a></li>
+
+ 
+<li><a href="https://www.rijksoverheid.nl/onderwerpen/ontslag/vraag-en-antwoord/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen" class=" ">
+  Hoogte transitievergoeding vanaf 2020</a></li>
+
+
+  <li><a href="https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar/overzicht-schoolvakanties-2019-2020">
+  Overzicht schoolvakanties 2019-2020</a></li>
+
+
+</ul>
+        </div>
+        
+        <p class="copyright showCopyright">
+          <span>©</span>
+          Hollandse Hoogte</p>
+      </div>
+
+      <div class="container">
+
+      <div class="row">
+        <div class="column">
+          <h5>Belastingen, uitkeringen en toeslagen</h5>
+          <p>Bijstand, AOW, WW-uitkering, Inkomstenbelasting, Wajong ...</p>
+        </div>
+        <div class="column">
+          <h5>Bouwen en wonen</h5>
+          <p>Huurwoning, Huurverhoging, Koopwoning, Energielabel, Bouwregelgeving...</p>
+        </div>
+        <div class="column">
+          <h5>Economie</h5>
+          <p>Ondernemen en innovatie, Overheidsfinanciën, Duurzame economie, Zelfstandigen zonder personeel ...</p>
+        </div>
+        <div class="column">
+          <h5>Familie, zorg en gezondheid</h5>
+          <p>Zorgverzekering, Zorg en ondersteuning thuis, Trouwen, samenlevingscontract en geregistreerd partnerschap ...</p>
+        </div>
+      </div>
+  
+        <div class="row">
+        <div class="column">
+          <h5>Internationale samenwerking</h5>
+          <p>Bijstand, AOW, WW-uitkering, Inkomstenbelasting, Wajong ...</p>
+        </div>
+        <div class="column">
+          <h5>Klimaat, milieu en natuur</h5>
+          <p>Huurwoning, Huurverhoging, Koopwoning, Energielabel, Bouwregelgeving...</p>
+        </div>
+        <div class="column">
+          <h5>Migratie en reizen</h5>
+          <p>Ondernemen en innovatie, Overheidsfinanciën, Duurzame economie, Zelfstandigen zonder personeel ...</p>
+        </div>
+        <div class="column">
+          <h5>Onderwijs </h5>
+          <p>Zorgverzekering, Zorg en ondersteuning thuis, Trouwen, samenlevingscontract en geregistreerd partnerschap ...</p>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <h5>Overheid en democratie</h5>
+          <p>Bijstand, AOW, WW-uitkering, Inkomstenbelasting, Wajong ...</p>
+        </div>
+        <div class="column">
+          <h5>Recht , veilighied en defensie</h5>
+          <p>Huurwoning, Huurverhoging, Koopwoning, Energielabel, Bouwregelgeving...</p>
+        </div>
+        <div class="column">
+          <h5>Verkeer en vervor</h5>
+          <p>Ondernemen en innovatie, Overheidsfinanciën, Duurzame economie, Zelfstandigen zonder personeel ...</p>
+        </div>
+        <div class="column">
+          <h5>Werk</h5>
+          <p>Zorgverzekering, Zorg en ondersteuning thuis, Trouwen, samenlevingscontract en geregistreerd partnerschap ...</p>
+        </div>
+      </div>
+    </div>
+   
+ 
+   
+   
+
+
+      <div class="container">
+        <h2>
+          Uitgelicht</h2>
+        <div class="row">
+          <div class="col-sm">
+            <img src="advies-luchtvaartsector.jpg" alt="Advies luchtvaartsector" style="width:95%;">
+            <h2>Advies luchtvaartsector</h2>
+            <p>Het Adviescollege Stikstofproblematiek heeft het advies over de luchtvaartsector aangeboden.</p> 
+          </div>
+          <div class="col-sm">
+            <img src="ikstopnu.jpg" alt="Advies luchtvaartsector" style="width:95%;">
+            <h2>Advies luchtvaartsector</h2>
+            <p>Het Adviescollege Stikstofproblematiek heeft het advies over de luchtvaartsector aangeboden.</p> 
+          </div>
+          <div class="col-sm">
+            <img src="electrisch_fietsen_1920x1280.jpg" alt="Advies luchtvaartsector" style="width:95%;">
+            <h2>Advies luchtvaartsector</h2>
+            <p>Het Adviescollege Stikstofproblematiek heeft het advies over de luchtvaartsector aangeboden.</p> 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+      <h2>
+        Nieuws</h2>
+
+        <div class="row">
+          <div class="col-sm">
+            <h3><a class="nav-link" href="#">Camps: 'Onze economie vraagt meer Europese ambitie'</a></h3>
+    
+        
+            <span class="publDate">16-01-2020 | 07:30</span>
+
+            <p>Nederland en Europa hebben alles in huis om mee te doen met de toepassing én ontwikkeling van nieuwe technologieën en ...</p>
+          </div>
+
+          <div class="col-sm">
+            <h3><a class="nav-link" href="#"> Historisch succes voor Nederlandse techbedrijven op techbeurs CES</a></h3>
+          
+
+          <span class="publDate"> 15-01-2020 | 16:00</span>
+<p>Nederland heeft zijn meest succesvolle Consumer Electronics Show (CES) ooit beleefd. Op de afgelopen editie van de grootste ...</p>
+</div>
+
+<div class="col-sm">
+  <h3><a class="nav-link" href="#"> Commissie Toekomst Zorg Thuiswonende Ouderen: ‘Bouwen, digitaliseren, samenwerken!’</a></h3>
+
+<span class="publDate"> 15-01-2020 | 16:00</span>
+<p>Om de zorg voor thuiswonende ouderen in de toekomst op peil te houden is het nodig nú te investeren in geschikte woningen, in ...</p> </div>
+
+</div>   
+
+<div class="row">
+  <div class="col-sm">
+    <h3><a class="nav-link" href="#"> Ambassadeurs komen ‘thuis’ voor jaarlijkse conferentie</a></h3>
+   
+    
+    <span class="publDate">16-01-2020 | 07:30</span>
+
+    <p>Nederland en Europa hebben alles in huis om mee te doen met de toepassing én ontwikkeling van nieuwe technologieën en ...</p>
+  </div>
+
+  <div class="col-sm">
+    <h3><a class="nav-link" href="#"> Historisch succes voor Nederlandse techbedrijven op techbeurs CES</a></h3>
+  
+
+  <span class="publDate"> 15-01-2020 | 16:00</span>
+<p>Nederland heeft zijn meest succesvolle Consumer Electronics Show (CES) ooit beleefd. Op de afgelopen editie van de grootste ...</p>
+</div>
+
+<div class="col-sm">
+  <h3><a class="nav-link" href="#"> Commissie Toekomst Zorg Thuiswonende Ouderen: ‘Bouwen, digitaliseren, samenwerken!’</a></h3>
+
+<span class="publDate"> 15-01-2020 | 16:00</span>
+<p>Om de zorg voor thuiswonende ouderen in de toekomst op peil te houden is het nodig nú te investeren in geschikte woningen, in ...</p> </div>
+
+</div>   
+</div>   
+
+</div>   
+
+
+
+
+
+
+<div class="container">
+  <a class="more" href="https://www.rijksoverheid.nl/actueel/nieuws">Meer nieuws</a>
+  
+
+    <div class="row">
+      <div class="col-sm border">
+
+        <h3>Vragen ?</h3>
+        
+
+        <h2>Bel Informatie<h2>
+        <h2>Rijksoverhied</h2>
+        
+        <h3>1400</h3>
+      </div>
+
+      <div class="col-sm border ">
+
+        <h4>Meld u aan voor de</h4>
+        
+
+        <h2 class="prp">Nieuwsbrief</h2>
+        <h2 class="prp"> Regeringnieuws</h2>
+        
+      
+      </div>
+      <div class="col-sm">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="blue">
+    
+    <div class="row">
+      <div class="col">
+        <h2> De Rijksoverheid. Voor Nederland
+        </h2>
+      </div>
+      <div class="col-md-auto">
+        <h4>Service</h4>
+        <ul>
+
+<li>Contact</li>
+<li>Abonneren</li>
+<li>RSS</li>
+<li>Vacatures</li>
+<li>Sitemap</li>
+<li>Help</li>
+<li>Archief</li>
+</ul>
+      </div>
+
+      <div class="col col-lg-2">
+        <h4>Over deze site</h4>
+         <ul>
+
+<li>Over Rijksoverheid.nl</li>
+<li>Wetten en regelingen</li>
+<li>Copyright</li>
+<li>Privacy</li>
+<li>Cookies</li>
+<li>Toegankelijkheid</li>
+<li>Open data</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+<div class="footer">
+
+
+  
+  
+         <button><a href="https://www.government.nl/" lang="en">English</a> </button>
+         
+  
+      <button><a href="https://www.gobiernodireino.nl/" lang="pap">Papiamento</a></button>
+           
+   
+      <button><a href="https://www.gobiernudireino.nl/" lang="pap">Papiamentu</a></button>
+          
+   
+      <button> <a href="https://www.rijksoverheid.nl/onderwerpen/overheidscommunicatie/nederlandse-gebarentaal">Nederlandse Gebarentaal</a></button>
+     
+</div>
+
+  
+  
+
+      
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+</body>
